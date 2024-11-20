@@ -1,21 +1,135 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.cl-internal-16vtwdp{
+  display: none;
+  overflow: hidden;
+}
+.cl-internal-y44tp9{
+  display: none;
+}
+
+
+/* ===================== break ===================== */
+
+@layer utilities {
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .pink_container {
+    @apply w-full  min-h-[530px] pattern flex justify-center items-center flex-col py-10 px-6;
+  }
+
+  .tag {
+    @apply bg-secondary px-6 py-3 font-bold rounded-sm uppercase relative tag-tri;
+  }
+
+  .heading {
+    @apply uppercase bg-white px-6 py-3  font-extrabold text-black sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
+  }
+
+  .sub-heading {
+    @apply font-medium text-[20px] text-white max-w-2xl text-center break-words;
+  }
+
+  .section_container {
+    @apply px-6 py-10 max-w-7xl mx-auto;
+  }
+
+
+  .no-result {
+    @apply  text-sm font-normal;
+  }
+
+  /* idea details */
+  .divider {
+    @apply border-dotted bg-zinc-400 max-w-4xl my-10 mx-auto;
+  }
+
+  .pattern {
+    background-image: linear-gradient(
+            to right,
+            transparent 49.5%,
+            rgba(244, 244, 244, 0.324) 49.5%,
+            rgba(247, 247, 247, 0.358) 50.5%,
+            transparent 50.5%
+    );
+    background-size: 5% 100%;
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+
+  .tag-tri {
+    @apply before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-black before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-black after:border-l-[10px] after:border-l-transparent;
+  }
+}
+
+.w-md-editor-toolbar {
+  padding: 10px !important;
 }

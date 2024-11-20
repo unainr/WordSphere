@@ -3,24 +3,50 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev ",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom",
+    "next": "$next"
+  },
   "dependencies": {
+    "@clerk/nextjs": "^6.3.4",
+    "@radix-ui/react-dropdown-menu": "^2.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.64.1",
+    "@sentry/nextjs": "8",
+    "@tabler/icons-react": "^3.22.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "easymde": "2",
+    "framer-motion": "^11.11.15",
+    "lucide-react": "^0.456.0",
+    "markdown-it": "^14.1.0",
+    "next": "15.0.3",
+    "next-sanity": "^9.8.13",
+    "next-themes": "^0.4.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "next": "15.0.3"
+    "sanity": "^3.64.1",
+    "sanity-plugin-markdown": "^5.0.0",
+    "styled-components": "^6.1.13",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/markdown-it": "^14.1.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.3"
+    "typescript": "^5"
   }
 }
