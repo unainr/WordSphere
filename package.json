@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom",
     "next": "$next"
   },
   "dependencies": {
