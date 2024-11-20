@@ -34,9 +34,6 @@
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },
-  "overrides": {
-    "next": "$next"
-  },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^20",
