@@ -40,7 +40,7 @@ const SubBeams = ({ query }: { query?: string }) => {
 			  variant="outline"
 			  size="icon"
 			  type="submit"
-			  className="rounded-full relative z-10 p-3 bg-indigo-600 hover:bg-indigo-700 text-white shadow-md hover:shadow-lg focus:ring-2 focus:ring-indigo-500"
+			  className="rounded-full relative z-10 p-3  shadow-md hover:shadow-lg "
 			>
 			  <Search className="h-5 w-5 md:h-6 md:w-6" />
 			</Button>

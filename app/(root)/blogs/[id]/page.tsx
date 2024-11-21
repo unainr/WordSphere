@@ -30,18 +30,19 @@ const Blogs = async ({ params }: { params: Promise<{ id: string }> }) => {
 				<div className="space-y-5 mt-10 max-w-4xl mx-auto">
 					<div className="flex-between gap-5">
 						<div className="flex gap-2 items-center mb-3">
-							<Image
-								src={post.author.image}
-								alt="avatar"
-								width={64}
-								height={64}
-								className="rounded-full drop-shadow-lg"
-							/>
+							<div className="relative w-14 h-14 rounded-full overflow-hidden drop-shadow-lg">
+								<Image
+									src={post.author.image}
+									alt="avatar"
+									fill
+									className="object-cover"
+								/>
+							</div>
 
 							<div>
 								<p className="text-20-medium">{post.author.name}</p>
 								<p className="text-16-medium !text-black-300">
-									@{post.author.name}
+									@{post.author.username}
 								</p>
 							</div>
 						</div>
@@ -66,8 +67,6 @@ const Blogs = async ({ params }: { params: Promise<{ id: string }> }) => {
 				{/* <Suspense fallback={<Skeleton className="view_skeleton" />}>
           <View id={id} />
         </Suspense> */}
-
-
 			</section>
 		</>
 	);
