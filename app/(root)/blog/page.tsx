@@ -4,6 +4,7 @@ import { BLOGS_QUERY } from '@/sanity/lib/queries'
 import Image from 'next/image'
 import Link from 'next/link'
 import LampDemo from '@/components/ui/lamp'
+import { BackgroundBoxesDemo } from '@/components/SubBackground'
 const Blog = async ({
 	searchParams,
 }: {
@@ -14,7 +15,7 @@ const Blog = async ({
     const posts = await client.fetch(BLOGS_QUERY,params);
   return (
     <>
-    <LampDemo/>
+  <BackgroundBoxesDemo/>
 
     <div className="mt-12 grid mx-4 gap-2 sm:grid-cols-2 lg:grid-cols-3 mb-5">
     {posts?.length > 0 ? (

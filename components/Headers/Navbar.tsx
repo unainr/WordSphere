@@ -9,7 +9,7 @@ const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<nav className=" bg-background/50  border-b  sticky top-0 backdrop-blur  z-30 scroll-p-16 scroll-smooth">
+		<nav className=" bg-white dark:bg-black   border-b  sticky top-0 backdrop-blur  z-30 scroll-p-16 scroll-smooth">
 			<div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
 				<div className="flex items-center justify-between">
 					<Link href="/">
@@ -70,7 +70,7 @@ const Navbar = () => {
 					}`}>
 					<div className="flex flex-col   md:flex-row   md:mx-6 font-semibold">
 						<Link
-							className="my-2 uppercase  text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-violet-100 dark:hover:text-violet-600 md:mx-4 md:my-0"
+							className="my-2 uppercase  text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-violet-500 dark:hover:text-violet-600 md:mx-4 md:my-0"
 							href="/">
 							Home
 						</Link>
