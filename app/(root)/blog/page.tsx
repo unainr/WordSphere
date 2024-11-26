@@ -57,7 +57,7 @@ const Blog = async ({
                       />
                   </div>
                   <div className="ml-3">
-                      <span className="block text-sm font-medium text-gray-900">
+                      <span className="block text-sm font-medium ">
                           {post.author?.name}
                       </span>
                       <span className="block text-xs ">

@@ -4,7 +4,6 @@ import Image from "next/image";
 const MoreBlogs = ({ post }: { post: any }) => {
 	const {
 		_createdAt,
-		views,
 		author,
 		title,
 		category,
@@ -50,7 +49,7 @@ const MoreBlogs = ({ post }: { post: any }) => {
 						/>
 					</div>
 					<div className="ml-3">
-						<span className="block text-sm font-medium text-gray-900">
+						<span className="block text-sm font-medium ">
 							{author?.name}
 						</span>
 						<span className="block text-xs ">
