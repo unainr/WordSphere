@@ -23,9 +23,7 @@ export function WorldMapDemo() {
           </span>
         </p>
         <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
-          Break free from traditional boundaries. Work from anywhere, at the
-          comfort of your own studio apartment. Perfect for Nomads and
-          Travellers.
+        Stay connected and inspired from any corner of the world. WordSphere empowers you to share ideas and stories effortlessly, no matter where you are.
         </p>
       </div>
       <WorldMap
