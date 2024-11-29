@@ -1,6 +1,5 @@
 import MoreBlogs from "@/components/MoreBlogs";
 import SubBeams from "@/components/SubBeams";
-import { WorldMapDemo } from "@/components/SubRemote";
 import { client } from "@/sanity/lib/client";
 import { BLOGS_QUERY } from "@/sanity/lib/queries";
 export default async function Home({
@@ -24,13 +23,13 @@ export default async function Home({
 				<div className="mt-12 grid mx-4 gap-2 sm:grid-cols-2 lg:grid-cols-3 mb-5">
 					{posts?.length > 0 ? (
 						posts
-							.slice(0, 6)
+							// .slice(0, 6)
 							.map((post: any) => <MoreBlogs key={post?._id} post={post} />)
 					) : (
 						<p className="no-results">No Post found</p>
 					)}
 				</div>
-				<WorldMapDemo/>
+
 			</div>
 		</>
 	);

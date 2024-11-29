@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import "easymde/dist/easymde.min.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import NextTopLoader from "nextjs-toploader";
+
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
 	variable: "--font-geist-sans",
@@ -36,6 +38,13 @@ export default function RootLayout({
 						defaultTheme="system"
 						enableSystem
 						disableTransitionOnChange>
+						<NextTopLoader
+							color="#4287f5"
+							height={2}
+							crawlSpeed={50}
+							speed={1000}
+							showSpinner={false}
+						/>
 						{children}
 					</ThemeProvider>
 				</ClerkProvider>
